@@ -1,7 +1,7 @@
 <?php
-    $i = 0;
     session_start();
-    include("database.php");
+    if($_SESSION['logged_in']==true){
+        include("database.php");
     echo "<h1>Hello, {$_SESSION['username']}</h1>";
     $username=$_SESSION['username'];
     if(!isset($_SESSION['tasks']) && !isset($_SESSION['priority'])){
@@ -13,9 +13,9 @@
             array_push($_SESSION['tasks'], $_POST['task']);
             array_push($_SESSION['priority'], $_POST['priority']);
             $task = end($_SESSION['tasks']);
-            $i++;
+            $priority = end($_SESSION['priority']);
             var_dump($username, $task); 
-            $sql = "INSERT INTO tasks(user, task) VALUES('{$username}', '{$task}')";
+            $sql = "INSERT INTO tasks(user, task, priority) VALUES('{$username}', '{$task}', '{$priority}')";
             mysqli_query($conn, $sql);
         }else{
             echo "
@@ -26,7 +26,21 @@
         }
         
     }
-    foreach($_SESSION['tasks'] as $key => $value){
+    $sql = "SELECT task, priority FROM tasks WHERE user = '{$username}'";
+    $result = mysqli_query($conn, $sql);
+    if(mysqli_num_rows($result)>0){
+        while($row = mysqli_fetch_assoc($result)){
+            echo "
+                <div class='task-box'>
+                <h2>{$row['task']}</h2>
+                <p>Priority: {$row['priority']}</p>
+                </div>
+            
+            ";
+        }
+    }else{
+        foreach($_SESSION['tasks'] as $key => $value){
+
       echo "
             <div class='task-box'>
                 <h2>{$value}</h2>
@@ -35,8 +49,12 @@
         ";
 
     }
+    }
     if(isset($_POST['logout'])){
         session_destroy();
+        header("Location: TODO_DB_LOGIN.php");
+    }
+    }else{
         header("Location: TODO_DB_LOGIN.php");
     }
 
