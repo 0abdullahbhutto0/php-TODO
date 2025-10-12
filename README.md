@@ -57,12 +57,19 @@ Access the application through your browser
 
 ## 📁 File Structure
 comic-todo-app/
+
 ├── index.php              # Main TODO list page
+
 ├── TODO_DB_LOGIN.php      # Login handler
+
 ├── TODO_DB_SIGNIN.php     # Signup handler
+
 ├── login.html             # Login page
+
 ├── signup.html            # Signup page
+
 ├── background.svg         # Custom paper texture background
+
 └── styles.css             # Main stylesheet
 
 ## 🎯 Usage
