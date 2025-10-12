@@ -1,7 +1,7 @@
 ## 📝 Comic-Style TODO List App
 
 A fun and interactive TODO list application with a hand-drawn, comic book aesthetic. Built with PHP, MySQL, and custom CSS styling that makes task management feel like writing in a personal diary!
-✨ Features
+# ✨ Features
 
 User Authentication: Secure login and signup system
 Sticky Note Design: Tasks displayed as colorful sticky notes in a responsive grid
