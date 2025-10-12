@@ -56,7 +56,6 @@ Access the application through your browser
 
 
 ## 📁 File Structure
-
 comic-todo-app/
 │
 ├── index.php                 # Main TODO list page
