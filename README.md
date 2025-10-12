@@ -56,6 +56,7 @@ Access the application through your browser
 
 
 ## 📁 File Structure
+
 comic-todo-app/
 │
 ├── index.php                 # Main TODO list page
@@ -65,7 +66,8 @@ comic-todo-app/
 ├── signup.html               # Signup page
 ├── background.svg            # Custom paper texture background
 └── styles.css                # Main stylesheet
-🎯 Usage
+
+## 🎯 Usage
 
 Sign Up: Create a new account with username and password
 Login: Access your personal TODO list
