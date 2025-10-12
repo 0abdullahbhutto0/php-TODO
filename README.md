@@ -1,7 +1,7 @@
-## 📝 Comic-Style TODO List App
+# 📝 Comic-Style TODO List App
 
 A fun and interactive TODO list application with a hand-drawn, comic book aesthetic. Built with PHP, MySQL, and custom CSS styling that makes task management feel like writing in a personal diary!
-# ✨ Features
+## ✨ Features
 
 User Authentication: Secure login and signup system
 Sticky Note Design: Tasks displayed as colorful sticky notes in a responsive grid
@@ -11,7 +11,7 @@ Textured Background: Beautiful SVG paper texture with doodle patterns
 Responsive Layout: Works seamlessly on desktop and mobile devices
 Interactive Animations: Hover effects and smooth transitions
 
-🎨 Design Highlights
+## 🎨 Design Highlights
 
 Patrick Hand and Comic Neue fonts for authentic hand-written feel
 Color-coded sticky notes with slight variations for visual interest
@@ -19,8 +19,9 @@ Bold black borders with rounded corners and drop shadows
 Textured paper background with pencil doodles
 Smooth hover animations that make notes "pop"
 
-🚀 Getting Started
-Prerequisites
+## 🚀 Getting Started
+
+### Prerequisites
 
 PHP 7.0 or higher
 MySQL 5.6 or higher
@@ -54,8 +55,7 @@ Place files in your web server's document root
 Access the application through your browser
 
 
-
-📁 File Structure
+## 📁 File Structure
 comic-todo-app/
 │
 ├── index.php                 # Main TODO list page
@@ -73,7 +73,7 @@ Add Tasks: Enter task name and select priority level
 View Tasks: Tasks display as sticky notes in a responsive grid
 Manage: Tasks are organized and easy to scan
 
-🎨 Customization
+## 🎨 Customization
 Colors
 The app uses a vibrant color palette that can be customized in the CSS:
 
@@ -84,9 +84,12 @@ Paper Cream: #fffbea (sticky notes)
 Background: #fdf6e3 (page background)
 
 Fonts
+
 To change fonts, update the Google Fonts import:
 css@import url('https://fonts.googleapis.com/css2?family=YourFont&display=swap');
-🔒 Security Notes
+
+## 🔒 Security Notes
+
 This is a demonstration project. For production use, consider:
 
 Implementing password hashing (bcrypt/Argon2)
@@ -96,13 +99,13 @@ Using prepared statements for database queries
 Implementing rate limiting
 Adding session security measures
 
-🐛 Known Issues
+## 🐛 Known Issues
 
 Session management needs enhancement for production
 No password recovery feature yet
 Tasks cannot be edited or deleted (feature coming soon)
 
-🚧 Future Enhancements
+## 🚧 Future Enhancements
 
  Edit and delete tasks
  Task completion checkboxes
@@ -113,9 +116,9 @@ Tasks cannot be edited or deleted (feature coming soon)
  Dark mode toggle
  Multi-language support
 
-📄 License
+## 📄 License
 This project is open source and available under the MIT License.
-🤝 Contributing
+## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
 Fork the project
@@ -124,12 +127,11 @@ Commit your changes (git commit -m 'Add some AmazingFeature')
 Push to the branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
-👤 Author
-Your Name
+## 👤 Author
+### Abdullah Bhutto
+### GitHub: @0abdullahbhutto0
 
-GitHub: @0abdullahbhutto0
-
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 
 Google Fonts for Patrick Hand and Comic Neue
 Inspiration from traditional sticky note TODO lists
